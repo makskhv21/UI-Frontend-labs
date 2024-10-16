@@ -183,3 +183,60 @@ main {
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+
+@media (max-width: 1200px) {
+    .section-first, .section-second, .section-third {
+        flex-direction: column; /* Змінює порядок на вертикальний */
+        align-items: center; /* Центрує зображення та текст */
+    }
+
+    .section-first img,
+    .section-second img,
+    .section-third img {
+        margin: 0 0 15px 0;
+        width: 100%; /* Змінює ширину зображення на 100% для мобільних пристроїв */
+        height: auto; /* Автоматично налаштовує висоту */
+    }
+
+    .image-section-second img {
+        padding-left: 0;
+        width: 50%;
+    }
+
+    .section-aside {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .section-main {
+        width: 90%;
+        padding-left: 10px;
+    }
+
+    .section-first h1,
+    .section-second h1,
+    .section-third h1 {
+        font-size: 2.0em;
+    }
+
+    .section-aside {
+        margin-top: 0;
+        width: 90%;
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+
+}
