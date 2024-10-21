@@ -7,10 +7,9 @@ body {
     transition: background-color 0.5s ease;
 }
 
-
 /* header */
 header {
-    display: flex; 
+    display: flex;                /* Flexbox */
     position: sticky;
     top: 0; 
     z-index: 1000; 
@@ -25,9 +24,8 @@ header {
 }
 
 main {
-    display: flex;
+    display: flex;                 /* Flexbox */
     width: 100%;
-
 }
 
 .section-main{
@@ -39,7 +37,7 @@ main {
 
 /* section-first */
 .section-first {
-    display: flex; 
+    display: flex;                         /* Flexbox */
     align-items: flex-start; 
     margin-bottom: 30px;
     font-family: 'Georgia', serif; 
@@ -74,7 +72,7 @@ main {
 
 /* section-second */
 .section-second {
-    display: flex; 
+    display: flex;                          /* Flexbox */
     align-items: flex-start; 
     gap: 20px; 
     margin-bottom: 30px;
@@ -86,7 +84,7 @@ main {
 }
 
 .image-section-second {
-    display: flex; 
+    display: flex;                         /* Flexbox */
 }
 
 .image-section-second img {
@@ -113,7 +111,7 @@ main {
 
 /* section-third */
 .section-third {
-    display: flex; 
+    display: flex;                          /* Flexbox */
     align-items: flex-start; 
     margin-bottom: 30px;
     font-family: 'Georgia', serif; 
@@ -161,7 +159,6 @@ main {
     border-bottom: 2px solid #3498db; 
 }
 
-/* Стилі для абзаців */
 .section-aside p {
     font-size: 1em;
     line-height: 1.6;
@@ -169,7 +166,6 @@ main {
     margin-bottom: 20px;
 }
 
-/* Додаткові стилі для секцій */
 .section-aside section {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 15px;
@@ -178,26 +174,25 @@ main {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Ефект при наведенні */
 .section-aside section:hover {
     transform: translateY(-5px); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 
-
+/* Media Queries */
 @media (max-width: 1200px) {
     .section-first, .section-second, .section-third {
-        flex-direction: column; /* Змінює порядок на вертикальний */
-        align-items: center; /* Центрує зображення та текст */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .section-first img,
     .section-second img,
     .section-third img {
         margin: 0 0 15px 0;
-        width: 100%; /* Змінює ширину зображення на 100% для мобільних пристроїв */
-        height: auto; /* Автоматично налаштовує висоту */
+        width: 100%; 
+        height: auto; 
     }
 
     .image-section-second img {
@@ -212,7 +207,7 @@ main {
 
 @media (max-width: 768px) {
     main {
-        display: flex;
+        display: flex;                      /* Flexbox */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -235,8 +230,4 @@ main {
         width: 90%;
         padding-left: 20px;
     }
-}
-
-@media (max-width: 480px) {
-
 }
