@@ -486,7 +486,7 @@ footer td {
 
 @media (max-width: 480px) {
     body {
-        width: 100%; 
+        margin: 0;
         padding: 0;
     }
 
@@ -497,7 +497,7 @@ footer td {
 
     .logoImg {
         width: 80%; 
-        margin: 10px 0;
+        margin: 10px 20px;
     }
 
     .btn-register {
@@ -505,62 +505,25 @@ footer td {
         margin: 10px 0; 
     }
 
-    .section-one, .section-two {
-        flex-direction: column; 
-        padding: 20px; 
-        margin: 20px; 
-    }
-
-    .explore-content {
-        width: 100%; 
-        padding: 0; 
-    }
-
-    .explore-button {
-        width: 60%;
-        height: 10%;
-        font-size: 16px;
-    }
-
-    .img-section-one {
-        width: 100%;
-        height: auto;
-    }
-
     .articles-container {
         flex-direction: column; 
         gap: 20px; 
     }
 
-    .destinations-content,
-    .tips-content,
-    .adventures-content {
-        width: 90%;
-        padding: 10px;
+    .step-by-step-guide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .step-by-step-guide {
-        display: flex;                /* Flexbox */
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin-left: 50px;
+    .step-by-step-guide h1 {
+        font-size: 19px;
     }
 
     .step {
-        width: 100%; 
+        width: 100%;
         height: auto;
-    }
-
-    .step h1 {
-        font-size: 40px;
-        padding: 10px;
-    }
-
-    .get-started-button {
-        width: 90%;
-        font-size: 16px; 
-    }
+    } 
 
     footer .logo {
         width: 90px;

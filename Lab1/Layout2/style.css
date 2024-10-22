@@ -311,6 +311,18 @@ figcaption {
 }
 
 @media (max-width: 992px) {
+    figure {
+        margin-right: 15px;
+    }
+
+    .name-travel {
+        font-size: 17px;
+    }
+
+    .UAH {
+        font-size: 14px;
+    }
+
     .product-grid {
         grid-template-columns: repeat(3, 1fr);               /* Grid */
         width: 100%;
@@ -372,6 +384,19 @@ figcaption {
 }
 
 @media (max-width: 480px) {
+    #search-input {
+        font-size: 15px;
+    }
+
+    #btn-loupe {
+        top: 50%;
+        left: 55%;
+    }
+    .btn-loupe {
+        width: 15px;
+        height: 15px;
+    }
+
     main {
         display: flex;                 /* Flexbox */
         flex-direction: column;
