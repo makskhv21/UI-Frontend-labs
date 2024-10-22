@@ -412,7 +412,7 @@ footer td {
     .destinations-content,
     .tips-content,
     .adventures-content {
-        width: 80%; 
+        width: 89%; 
     }
 
     .steps-container {
@@ -421,11 +421,16 @@ footer td {
         align-items: center;
         justify-content: center;
         margin-left: 235px;
-        gap: 40px;
+        gap: 50px;
     }
 
     .step {
         width: 290px;
+        margin-top: 0;
+    }
+
+    .step-content {
+        padding: 30px 0;  
     }
 
     footer {
@@ -485,11 +490,6 @@ footer td {
 }
 
 @media (max-width: 480px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
     header {
         flex-direction: column; 
         height: auto; 
@@ -507,7 +507,8 @@ footer td {
 
     .articles-container {
         flex-direction: column; 
-        gap: 20px; 
+        gap: 20px;
+        width: 115%; 
     }
 
     .step-by-step-guide {
@@ -517,13 +518,36 @@ footer td {
     }
 
     .step-by-step-guide h1 {
-        font-size: 19px;
+        margin-top: 0;
+        font-size: 25px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
     .step {
-        width: 100%;
+        width: 115%;
         height: auto;
     } 
+
+    .step h1 {
+        font-size: 50px;
+    }
+
+    .step-content h2 {
+        font-size: 25px;
+    }
+
+    .step-content p {
+        font-size: 20px;
+    }
+
+    .btn-learn {
+        width: 56%;
+    }
+
+    .get-started-button {
+        width: 40%;
+    }
 
     footer .logo {
         width: 90px;
@@ -534,6 +558,8 @@ footer td {
         flex-direction: column;
         align-items: center;
         padding: 10px;
+        margin-top: 0;
+        height: 170px;
     }
 
     footer .list-items {
@@ -541,6 +567,7 @@ footer td {
         align-items: flex-start;
         margin: 0; 
         padding-right: 10px;
+        padding-bottom: 30px;
     }
 
     footer .list-items ul li {
