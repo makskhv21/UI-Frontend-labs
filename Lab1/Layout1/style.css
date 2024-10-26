@@ -161,9 +161,9 @@ ul {
     .one-two-section ul li {
         font-size: 17px;
     }
-
     .side-nav ul li {
         font-size: 17px;
+        padding-right: 10px;
     }
 
     .section {
@@ -172,19 +172,31 @@ ul {
 
     .side-trend ul li {
         font-size: 17px;
+        padding-right: 10px;
     }
 
     .logoImg {
-        width: 18%; 
+        width: 19%; 
         height: auto;
     }
 
+    .header {
+        display: flex;
+        gap: 58%;
+    }
+
     .search-container {
-        max-width: 200px; 
+        width: 90%; 
     }
 }
 
 @media (max-width: 768px) {
+
+    .header {
+        display: flex;
+        gap: 20%;
+    }
+
     .one-two-section {
         flex-direction: column; 
         height: auto; 
@@ -195,6 +207,14 @@ ul {
         flex-direction: column; 
         gap: 6px; 
         margin: 10px;
+    }
+
+    .search-container {
+        width: 150px;
+    }
+
+    .logoImg {
+        width: 150px;
     }
 
     .main-container {
@@ -222,6 +242,7 @@ ul {
     .header {
         flex-direction: column; 
         align-items: center;
+        gap: 0px;
         justify-content: center;
         height: 100px;
         margin-bottom: 20px;
@@ -237,6 +258,10 @@ ul {
     #search-input {
         height: 40px; 
         font-size: 16px; 
+    }
+
+    .search-container {
+        width: 200px;
     }
 
     .one-two-section {

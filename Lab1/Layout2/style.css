@@ -365,6 +365,7 @@ figcaption {
 
     .side-nav {
         width: 40%;
+        padding-right: 10px;
     }
 
     .header {
@@ -375,7 +376,7 @@ figcaption {
     }
 
     .logoImg {
-        width: 33%;
+        width: 35%;
     }
 
     .btn-cart {
@@ -405,6 +406,7 @@ figcaption {
     .side-nav {
         width: 91%; 
         min-height: 30px; 
+        padding-right: 0px;
     }
 
     .side-nav li {

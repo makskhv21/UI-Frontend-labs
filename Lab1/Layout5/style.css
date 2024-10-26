@@ -277,7 +277,7 @@ td {
 
     input[type="text"] {
         width: 60%; 
-        margin: 5px 25px; 
+        margin: 5px 29px; 
     }
 
     button {
@@ -286,6 +286,11 @@ td {
     }
 
     .footer-container {
+        font-size: 15px;
+    }
+
+    ul li{
+        width: 100%;
         font-size: 15px;
     }
 }
@@ -349,11 +354,8 @@ td {
         align-items: center; 
     }
 
-    td {
-        width: auto; 
-    }
-
     td ul li {
+        width: 100%;
         font-size: 12px;
     }
 }
