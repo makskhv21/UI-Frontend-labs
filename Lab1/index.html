@@ -6,92 +6,147 @@
     <title>Document</title>
     <style>
         body {
-            background: linear-gradient(to right, #8A2BE2, #FFD700);
-            font-size: 2em; 
-            color: #FFFFFF;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        h1 {
-            font-size: 40px;
-            margin-left: 30px;
-        }
-
-        ul {
-            list-style: none; 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 70px;
-            row-gap: 10px;
-            flex-wrap: wrap; 
+            font-family: 'Arial', sans-serif;
+            margin: 0;
             padding: 0;
+            background: linear-gradient(to bottom right, #4a90e2, #6fb1fc);
+            color: #fff;
         }
 
-        li {
-            font-size: 30px;
-            margin-right: 20px;
-            margin-bottom: 20px; 
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
             text-align: center;
+            padding: 60px 20px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            border-bottom: 5px solid #2a9df4;
         }
 
-        a {
-            text-decoration: none; 
-            display: block; 
-            color: #06000a; 
-            font-size: 1.3em; 
-            font-weight: bold; 
-            transition: color 0.3s; 
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #2a9df4;
         }
 
-        a:hover {
-            color: #FFD700; 
+        header p {
+            font-size: 1.5em;
+            margin: 10px 0 0;
+            color: #333;
         }
 
-        img {
-            margin-top: 10px; 
-            width: 350px; 
-            height: 350px; 
+        main {
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            display: flex;
+            flex-direction: column; /* Stack children vertically */
+            height: 400px; /* Fixed height for uniformity */
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px; /* Set a fixed height for the images */
+            object-fit: contain; /* Ensure the entire image is visible */
+        }
+
+        .card-content {
+            padding: 15px;
+            flex-grow: 1; /* Allow content to grow */
+        }
+
+        .card-content a {
+            text-decoration: none;
+            color: #2a9df4;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-top: 10px;
             display: block;
-            margin-left: auto; 
-            margin-right: auto; 
+            transition: color 0.3s;
+        }
+
+        .card-content a:hover {
+            color: #0056b3; /* Darker shade for hover effect */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: rgba(255, 255, 255, 0.9);
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        footer p {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        footer a {
+            color: #2a9df4; /* Link color */
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        footer a:hover {
+            color: #0056b3; /* Darker shade for hover effect */
         }
     </style>
 </head>
 <body>
-    <h1>Examples of layouts:</h1>
-    <ul>
-        <li>
-            <a href="./Layout1/index.html" target="_blank">
-                <span>Layout1 😎</span>
-                <img src="./img/Layout1.png" alt="Layout1"/>
-            </a>
-        </li>
-        <li>
-            <a href="./Layout2/index.html" target="_blank">
-                <span>Layout2 🎨</span>
-                <img src="./img/Layout2.png" alt="Layout1"/>
-            </a>
-        </li>
-        <li>
-            <a href="./Layout3/index.html" target="_blank">
-                <span>Layout3 ✨</span>
-                <img src="./img/Layout3.png" alt="Layout1"/>
-            </a>
-        </li>
-        <li>
-            <a href="./Layout4/index.html" target="_blank">
-                <span>Layout4 🌍</span>
-                <img src="./img/Layout4.png" alt="Layout1"/>
-            </a>
-        </li>
-        <li>
-            <a href="./Layout5/index.html" target="_blank">
-                <span>Layout5 🌌</span>
-                <img src="./img/Layout5.png" alt="Layout1"/>
-            </a>
-        </li>
-    </ul>
+    <header>
+        <h1>Explore Beautiful Layouts</h1>
+        <p>Discover a variety of stunning layouts designed for your inspiration.</p>
+    </header>
+    <main>
+        <div class="card" id="Layout1">
+            <img src="./img/Layout1.png" alt="Layout1"/>
+            <div class="card-content">
+                <a href="./Layout1/index.html" target="_blank">Layout1 😎</a>
+            </div>
+        </div>
+        <div class="card" id="Layout2">
+            <img src="./img/Layout2.png" alt="Layout2"/>
+            <div class="card-content">
+                <a href="./Layout2/index.html" target="_blank">Layout2 🎨</a>
+            </div>
+        </div>
+        <div class="card" id="Layout3">
+            <img src="./img/Layout3.png" alt="Layout3"/>
+            <div class="card-content">
+                <a href="./Layout3/index.html" target="_blank">Layout3 ✨</a>
+            </div>
+        </div>
+        <div class="card" id="Layout4">
+            <img src="./img/Layout4.png" alt="Layout4"/>
+            <div class="card-content">
+                <a href="./Layout4/index.html" target="_blank">Layout4 🌍</a>
+            </div>
+        </div>
+        <div class="card" id="Layout5">
+            <img src="./img/Layout5.png" alt="Layout5"/>
+            <div class="card-content">
+                <a href="./Layout5/index.html" target="_blank">Layout5 🌌</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/makskhv21">Khvyts Maksim</a>. Designed and developed with passion.</p>
+    </footer>
 </body>
 </html>
-

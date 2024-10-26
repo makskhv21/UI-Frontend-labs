@@ -159,10 +159,14 @@ ul {
 /* Media Queries */
 @media (max-width: 1200px) { 
     .one-two-section ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
         font-size: 17px;
     }
     .side-nav ul li {
-        font-size: 17px;
+        font-size: 15px;
         padding-right: 10px;
     }
 
@@ -171,7 +175,7 @@ ul {
     }
 
     .side-trend ul li {
-        font-size: 17px;
+        font-size: 15px;
         padding-right: 10px;
     }
 

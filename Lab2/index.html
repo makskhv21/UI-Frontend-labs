@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stunning Layouts with CSS Preprocessors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Задати мінімальну висоту для тіла */
+        }
+
+        header {
+            background: linear-gradient(to right, #4a90e2, #007bff);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        main {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            flex-grow: 1; /* Дозволити основному контенту рости */
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px; /* Збільшити радіус закруглення */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            width: 300px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-align: center;
+            position: relative; /* Додати позицію для анімації */
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 5px solid #4a90e2;
+        }
+
+        .card a {
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            background-color: #4a90e2;
+            color: white;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.2s;
+            position: relative;
+            border-radius: 0 0 15px 15px; /* Округлення нижніх кутів */
+        }
+
+        .card a:hover {
+            background-color: #357ab7;
+            transform: scale(1.05); /* Легка анімація при наведенні */
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline; /* Підкреслення при наведенні */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Creating Stunning Layouts with CSS Preprocessors</h1>
+        <p>Explore stunning layouts created with modern CSS techniques.</p>
+    </header>
+    <main>
+        <div class="card">
+            <img src="./img/Layout1.png" alt="Layout1"/>
+            <a href="./Layout1/index.html" target="_blank">Layout1 🚀</a>
+        </div>
+        <div class="card">
+            <img src="./img/Layout2.png" alt="Layout2"/>
+            <a href="./Layout2/index.html" target="_blank">Layout2 🌈</a>
+        </div>
+        <div class="card">
+            <img src="./img/Layout3.png" alt="Layout3"/>
+            <a href="./Layout3/index.html" target="_blank">Layout3 🌟</a>
+        </div>
+        <div class="card">
+            <img src="./img/Layout4.png" alt="Layout4"/>
+            <a href="./Layout4/index.html" target="_blank">Layout4 💎</a>
+        </div>
+        <div class="card">
+            <img src="./img/Layout5.png" alt="Layout5"/>
+            <a href="./Layout5/index.html" target="_blank">Layout5 🍀</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/makskhv21">Khvyts Maksim</a>. Designed and developed with passion.</p>
+    </footer>
+</body>
+</html>
