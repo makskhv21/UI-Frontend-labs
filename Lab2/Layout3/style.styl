@@ -1,0 +1,495 @@
+@import "variables.styl"
+
+body
+    font-family: font-family
+    line-height: 1.5
+    margin: 0
+    padding: 0
+    background-color: background-color
+    transition: background-color 0.5s ease
+
+/* Header */
+header
+    display: flex
+    position: sticky
+    top: 0
+    z-index: 1000
+    background-color: primary-color
+    box-shadow: box-shadow rgba(0, 0, 0, 0.5)
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 80px
+    animation: slideDown 0.5s ease-in-out
+
+@keyframes slideDown
+  from
+    opacity: 0
+    transform: translateY(-20px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+.logoImg
+    width: 15%
+    height: 60px
+    margin-left: 20px
+
+.btn-register
+    background-color: secondary-color
+    color: primary-color
+    border: none
+    border-radius: 5px
+    padding: 10px 20px
+    font-size: 16px
+    font-weight: bold
+    cursor: pointer
+    transition: background-color 0.3s ease, transform 0.3s ease
+    margin-right: 20px
+    &:hover
+        background-color: hover-color
+        transform: scale(1.05)
+
+/* Main */
+main
+    width: 100%
+
+/* Section One */
+.section-one
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 40px 20px
+    padding: 40px
+    border-radius: 10px
+    background: card-bg-gradient
+    box-shadow: 0 10px 30px shadow-color
+    animation: fadeIn 1s ease-in-out
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    transform: translateY(20px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+.explore-content
+    width: 50%
+    color: text-color-primary
+    padding: 20px
+    h1
+        margin: 0 0 10px
+        font-size: 3rem
+        color: primary-color
+        transition: color 0.3s
+        &:hover
+            color: btn-bg-color
+    p
+        margin: 10px 0 20px
+        font-family: 'Arial', sans-serif
+        line-height: 1.5
+        font-size: 1.2rem
+
+.explore-button
+    background: linear-gradient(45deg, #FF7043, #F4511E)
+    color: #fff
+    border: none
+    border-radius: 25px
+    padding: 15px 30px
+    font-size: 18px
+    font-weight: bold
+    cursor: pointer
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease
+    box-shadow: box-shadow rgba(0, 0, 0, 0.2)
+    outline: none
+    &:hover
+        background: linear-gradient(45deg, #F4511E, #FF7043)
+        transform: translateY(-4px) scale(1.05)
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3)
+
+.img-section-one
+    width: 50%
+    border-radius: 10px
+    max-width: 100%
+    height: auto
+    box-shadow: box-shadow rgba(0, 0, 0, 0.2)
+
+/* Section Two */
+.section-two
+    background-image: url("./img/back.jpg")
+    border-radius: 10px
+    padding: 60px
+    background-size: cover
+    background-position: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 150px 20px
+    animation: fadeInUp 0.8s ease-in-out
+
+@keyframes fadeInUp
+  from
+    opacity: 0
+    transform: translateY(20px)
+  to
+    opacity: 1
+    transform: translateY(0)
+
+.articles-container
+    display: flex
+    align-items: stretch
+    justify-content: center
+    gap: 40px
+
+.destinations-content
+.tips-content
+.adventures-content
+    width: 20%
+    padding: 20px
+    border-radius: 10px
+    color: text-color-secondary
+    font-family: 'Arial', sans-serif
+    box-shadow: 0 4px 8px shadow-color
+    transition: transform 0.3s
+
+.destinations-content
+    background-color: #00796B
+
+.destinations-content h1 
+.destinations-content p
+    color: #E0F2F1
+
+.tips-content
+    background-color: #B2DFDB
+
+.tips-content h1 
+.tips-content p
+    color: #004D40
+
+.adventures-content
+    background-color: #C62828
+
+.adventures-content h1
+.adventures-content p
+    color: #FFEBEE
+
+.destinations-content:hover
+.tips-content:hover
+.adventures-content:hover
+    transform: translateY(-5px)
+
+.btn-learn
+    width: 22%
+    margin-top: 70px
+    padding: 12px 24px
+    font-size: 18px
+    color: text-color-secondary
+    background-color: btn-bg-color
+    border: none
+    border-radius: 25px
+    cursor: pointer
+    transition: background-color 0.3s ease, transform 0.3s ease
+    box-shadow: box-shadow rgba(0, 0, 0, 0.2)
+    &:hover
+        background-color: btn-hover-color
+        transform: scale(1.05)
+
+/* Section Three */
+.step-by-step-guide h1
+  text-align: center
+  margin-top: 150px
+  padding-bottom: 20px
+  color: primary-color
+
+.steps-container
+  display: grid
+  grid-template-columns: repeat(3, 1fr)
+  align-items: center
+  justify-content: center
+  gap: 25px
+  margin-left: 253px
+  margin-right: 237px
+
+.step
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 10px
+    margin-top: 20px
+    gap: 15px
+    width: 310px
+    height: 225px
+    background-color: hover-color
+    transition: transform 0.3s
+    &:hover
+        transform: scale(1.05)
+    h1
+        font-size: 80px
+        padding-left: 20px
+        padding-bottom: 90px
+        color: btn-bg-color
+
+.step-content 
+    h2
+        text-align: start
+        color: #1D3557
+        margin: 5px 0
+    p
+        padding-right: 20px
+        text-align: start
+        color: #333
+
+/* Button Styling */
+.get-started-button
+    display: block
+    margin: 0 auto
+    justify-items: center
+    margin-top: 60px
+    margin-bottom: 100px
+    padding: 12px 24px
+    font-size: 18px
+    color: text-color-secondary
+    background-color: btn-bg-color
+    border: none
+    border-radius: 25px
+    cursor: pointer
+    transition: background-color 0.3s ease, transform 0.3s ease
+    width: 20%
+    &:hover
+        background-color: btn-hover-color
+        transform: scale(1.05)
+
+/* Footer */
+footer
+    margin-top: 150px
+    display: flex
+    background-color: #1A237E
+    color: #fff
+    padding: 20px
+    justify-content: center
+    position: relative
+    table
+        width: 100%
+        border-collapse: collapse
+    td
+        vertical-align: top 
+    .logo
+        padding-right: 50px
+        width: 200px
+        height: 70px
+    .list-items
+        display: flex
+        justify-content: space-around
+        margin-right: 50px
+        margin-left: 10px
+    .list-items 
+        ul
+            list-style: none
+            padding: 0
+            margin: 0
+            li
+                margin-bottom: 20px
+                font-size: 20px
+                a
+                    text-decoration: none
+                    color: white
+                    &:hover
+                        color: #D55C4C
+
+@media (max-width: 1200px)
+    header
+        flex-direction: row
+        height: auto
+
+    .logoImg
+        padding-top: 10px
+        padding-bottom: 10px
+        width: 20% 
+
+    .btn-register
+        padding-top: 10px
+
+    .section-one
+        display: flex                      /* Flexbox */
+        flex-direction: column
+
+    .img-section-one
+        order: 1
+        width: 100% 
+
+    .explore-content
+        order: 2
+        width: 100% 
+        h1
+            font-size: 2.5rem 
+
+    .articles-container
+        flex-direction: column 
+        align-items: center 
+        width: 70%
+
+    .destinations-content
+    .tips-content
+    .adventures-content
+        width: 89% 
+
+    .steps-container
+        display: grid                           /* Grid */
+        grid-template-columns: repeat(2, 1fr)
+        align-items: center
+        justify-content: center
+        gap: 30px
+
+    .step
+        width: 290px
+        margin-top: 0
+
+    .step-content
+        padding: 30px 0  
+
+    footer
+        flex-direction: column 
+        .logo
+            width: 150px
+            height: 50px  
+
+    .list-items ul li
+        font-size: 18px
+
+@media (max-width: 1024px)
+    .articles-container
+        flex-direction: column 
+        align-items: center 
+        width: 80%
+
+    .steps-container
+        display: grid                           /* Grid */
+        grid-template-columns: repeat(1, 1fr)
+        align-items: center
+        justify-content: center
+        gap: 30px
+        width: 64%
+        margin-left: 160px
+
+    .step
+        width: 100%
+
+@media (max-width: 768px)
+    .btn-learn
+        width: 55%
+
+    .steps-container
+        display: flex                      /* Flexbox */
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        width: 60%
+        margin-left: 145px
+        gap: 25px
+        height: auto
+
+    .step
+        width: 100%
+        h1
+            font-size: 40px
+
+    .get-started-button
+        width: 34%
+
+    footer
+        height: 100%
+
+    .list-items
+        width: 80%
+        ul 
+            li
+                font-size: 15px
+
+@media (max-width: 600px)
+    body
+        width: 123%
+
+    .step h1
+        font-size: 60px !important
+
+    .step-by-step-guide h1 
+        text-align: center
+        font-size: 20px
+
+    .list-items 
+        width: 90%
+        ul 
+            li 
+                font-size: 15px
+            
+@media (max-width: 480px)
+    header
+        flex-direction: column
+        height: auto
+
+    .logoImg
+        width: 50%
+        margin: 10px 20px
+
+    .btn-register
+        width: 50% 
+        margin: 10px 0 
+
+    .articles-container 
+        flex-direction: column 
+        gap: 20px
+        width: 115% 
+
+    .step-by-step-guide 
+        display: flex
+        flex-direction: column
+        align-items: center
+        h1 
+            margin-top: 0
+            font-size: 25px
+            padding-left: 20px
+            padding-right: 20px
+    
+    .steps-container 
+        margin-left: 230px
+        width: 60%    
+    
+    .step 
+        width: 135%
+        height: auto
+        h1 
+            font-size: 50px
+    
+    .step-content 
+        h2 
+            font-size: 25px
+        p 
+            font-size: 20px
+    
+    .btn-learn 
+        width: 56%
+    
+    .get-started-button 
+        width: 40%    
+
+    footer 
+        flex-direction: column
+        align-items: center
+        padding: 10px
+        margin-top: 0
+        height: 170px
+        .logo 
+            width: 90px
+            height: 50px 
+        .list-items 
+            flex-direction: column 
+            align-items: flex-start
+            margin: 0 
+            padding-right: 10px
+            padding-bottom: 30px
+            ul 
+                li 
+                    font-size: 10px 
+                    line-height: 10px
