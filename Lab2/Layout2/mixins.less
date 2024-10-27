@@ -1,0 +1,31 @@
+.bordered {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.hover-bg {
+    transition: background-color 0.5s;
+    &:hover {
+        background-color: @hover-color;
+    }
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
