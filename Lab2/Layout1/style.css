@@ -79,6 +79,7 @@ body .one-two-section ul li a {
   margin: 0;
   text-decoration: none;
   color: #fff;
+  font-size: 20px;
 }
 body .one-two-section ul li a:hover {
   color: black;
@@ -102,28 +103,23 @@ body .main-container article .section {
 body .main-container article .section > img {
   width: 100%;
 }
-body .main-container .side-nav,
-body .main-container .side-trend {
+body .main-container .side-nav, body .main-container .side-trend {
   width: 20%;
   height: 100%;
 }
-body .main-container .side-nav ul,
-body .main-container .side-trend ul {
+body .main-container .side-nav ul, body .main-container .side-trend ul {
   font-size: 20px;
 }
-body .main-container .side-nav ul li,
-body .main-container .side-trend ul li {
+body .main-container .side-nav ul li, body .main-container .side-trend ul li {
   list-style: none;
   padding-bottom: 10px;
   color: #4682B4;
 }
-body .main-container .side-nav ul li a,
-body .main-container .side-trend ul li a {
+body .main-container .side-nav ul li a, body .main-container .side-trend ul li a {
   text-decoration: none;
   color: initial;
 }
-body .main-container .side-nav ul li a:hover,
-body .main-container .side-trend ul li a:hover {
+body .main-container .side-nav ul li a:hover, body .main-container .side-trend ul li a:hover {
   color: #FF6347;
 }
 body .main-container .side-nav {
@@ -149,23 +145,19 @@ body .main-container .side-trend h2 {
   body .header .search-container {
     width: 90%;
   }
-  body .one-two-section ul li {
+  body .one-two-section ul li a {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     font-size: 17px;
   }
-  body .side-nav ul li {
+  body .side-nav ul li, body .side-trend ul li {
     font-size: 15px;
     padding-right: 10px;
   }
   body .section {
-    font-size: 17px;
-  }
-  body .side-trend ul li {
-    font-size: 15px;
-    padding-right: 10px;
+    font-size: 17px !important;
   }
 }
 @media (max-width: 768px) {
@@ -193,8 +185,7 @@ body .main-container .side-trend h2 {
     flex-direction: column;
     gap: 10px;
   }
-  body .main-container .side-nav,
-  body .main-container .side-trend {
+  body .main-container .side-nav, body .main-container .side-trend {
     width: 100%;
     margin-bottom: 20px;
     box-shadow: -4px 0 8px rgba(70, 130, 180, 0.5), 4px 0 8px rgba(70, 130, 180, 0.5);
