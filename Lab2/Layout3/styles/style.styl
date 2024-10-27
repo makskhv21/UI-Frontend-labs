@@ -1,3 +1,4 @@
+@import "animations.styl"
 @import "variables.styl"
 
 body
@@ -8,7 +9,6 @@ body
     background-color: background-color
     transition: background-color 0.5s ease
 
-/* Header */
 header
     display: flex
     position: sticky
@@ -21,14 +21,6 @@ header
     width: 100%
     height: 80px
     animation: slideDown 0.5s ease-in-out
-
-@keyframes slideDown
-  from
-    opacity: 0
-    transform: translateY(-20px)
-  to
-    opacity: 1
-    transform: translateY(0)
 
 .logoImg
     width: 15%
@@ -50,11 +42,9 @@ header
         background-color: hover-color
         transform: scale(1.05)
 
-/* Main */
 main
     width: 100%
 
-/* Section One */
 .section-one
     display: flex
     justify-content: space-between
@@ -65,14 +55,6 @@ main
     background: card-bg-gradient
     box-shadow: 0 10px 30px shadow-color
     animation: fadeIn 1s ease-in-out
-
-@keyframes fadeIn
-  from
-    opacity: 0
-    transform: translateY(20px)
-  to
-    opacity: 1
-    transform: translateY(0)
 
 .explore-content
     width: 50%
@@ -115,7 +97,6 @@ main
     height: auto
     box-shadow: box-shadow rgba(0, 0, 0, 0.2)
 
-/* Section Two */
 .section-two
     background-image: url("./img/back.jpg")
     border-radius: 10px
@@ -128,14 +109,6 @@ main
     justify-content: center
     margin: 150px 20px
     animation: fadeInUp 0.8s ease-in-out
-
-@keyframes fadeInUp
-  from
-    opacity: 0
-    transform: translateY(20px)
-  to
-    opacity: 1
-    transform: translateY(0)
 
 .articles-container
     display: flex
@@ -241,7 +214,6 @@ main
         text-align: start
         color: #333
 
-/* Button Styling */
 .get-started-button
     display: block
     margin: 0 auto
@@ -261,7 +233,6 @@ main
         background-color: btn-hover-color
         transform: scale(1.05)
 
-/* Footer */
 footer
     margin-top: 150px
     display: flex
@@ -312,7 +283,7 @@ footer
         padding-top: 10px
 
     .section-one
-        display: flex                      /* Flexbox */
+        display: flex                      
         flex-direction: column
 
     .img-section-one
@@ -336,7 +307,7 @@ footer
         width: 89% 
 
     .steps-container
-        display: grid                           /* Grid */
+        display: grid                           
         grid-template-columns: repeat(2, 1fr)
         align-items: center
         justify-content: center
@@ -365,7 +336,7 @@ footer
         width: 80%
 
     .steps-container
-        display: grid                           /* Grid */
+        display: grid                           
         grid-template-columns: repeat(1, 1fr)
         align-items: center
         justify-content: center
@@ -381,7 +352,7 @@ footer
         width: 55%
 
     .steps-container
-        display: flex                      /* Flexbox */
+        display: flex                      
         flex-direction: column
         align-items: center
         justify-content: center
