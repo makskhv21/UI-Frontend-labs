@@ -1,0 +1,265 @@
+@use './variables.scss' as *;
+@use './animations.scss' as *;
+@import './mixins.scss';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color; 
+    color: $text-color; 
+    
+    header {
+        @include flex-center(row, 20px);
+        margin: $header-margin; 
+        max-width: $max-width; 
+        padding: 0 20px;
+        animation: fadeIn 1s ease-in-out;
+        .logo {
+            @include logo-styles;
+        }
+
+        .logo-content p {
+            width: 80%;
+            font-size: 1.1em;
+            line-height: 1.5;
+            color: #444; 
+        }
+    }
+
+    .section-main {
+        @include flex-center(row, 30px);
+        .section-one, 
+        .section-two {
+            @include section-styles;
+
+            h2 {
+                font-size: 2em;
+                color: $primary-color;
+                margin-bottom: 10px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+                transition: color $transition-duration ease;
+                &:hover {
+                    color: $hover-color; 
+                }
+            }
+
+            p {
+                font-size: 1.1em;
+                line-height: 1.5;
+                color: #555; 
+            }
+
+            .logo {
+                @include logo-styles;
+            }
+        }
+    }
+
+    .section-three {
+        @include flex-center(row);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        input[type="text"] {
+            padding: 10px;
+            border: 1px solid $primary-color;
+            border-radius: 5px;
+            margin-right: 10px;
+            width: 500px;
+            height: 40px;
+            font-size: 1em;
+        }  
+
+        button {
+            @include button-styles(#FFBA00, white);
+            height: 60px;
+            width: 200px;
+
+            &:hover {
+                background-color: scale($secondary-color, -10%);
+                transform: scale(1.05); 
+            }
+        }
+    }
+
+    footer {
+        @include flex-center(row);
+        background: $footer-background;
+        color: white;
+        padding: 20px;
+        margin-top: 50px;
+        max-width: 100%;
+        overflow: hidden;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            td {
+                padding: 0 20px; 
+                vertical-align: top; 
+                text-align: center; 
+                width: 25%;
+                ul {
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    li {
+                        margin: 15px 0;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: bold;
+                            transition: color $transition-duration ease;
+                            &:hover {
+                                color: $footer-hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    header {
+        margin-left: 150px !important;
+        .logo {
+            width: 200px !important; 
+            height: 200px !important;
+        }
+    }
+
+    main {
+        .section-main {
+            flex-direction: column;            
+            align-items: center; 
+            .section-one, .section-two {
+                width: 90%;
+                margin-bottom: 20px;
+                .logo {
+                    width: 200px !important; 
+                    height: 200px !important;
+                }
+            }
+        }
+    }
+
+    input[type="text"] {
+        width: 100%; 
+        max-width: 400px; 
+    }
+
+    button {
+        width: 100%; 
+        max-width: 200px;
+    }
+
+    footer .footer-container td {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column !important;
+        align-items: center; 
+        text-align: center;
+        margin: 10px 0 !important;
+        .logo-content p {
+            margin: 50px
+        }
+    }
+
+    main {
+        .section-main {
+            flex-direction: column; 
+            align-items: center; 
+            padding: 0 20px;
+            .section-one, .section-two {
+                width: 90%; 
+                flex-direction: column;
+                .logo {
+                    order: 1;
+                    width: 100% !important;
+                }
+                
+                article {
+                    line-height: 0;
+                    order: 2;
+                }
+            }
+        }
+    }
+
+    input[type="text"] {
+        width: 60%; 
+        margin: 5px 29px; 
+    }
+
+    button {
+        width: 39%; 
+        margin-right: 25px;
+    }
+
+    footer {
+        font-size: 15px;
+        ul li {
+            width: 100%;
+            font-size: 15px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+        margin: 10px 0;
+        .logo-content p{
+            margin: 50px
+        }
+    }
+
+    .section-main {
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        .section-one, .section-two {
+            width: 90%;
+        }
+
+        img {
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px; 
+        }
+    }
+
+    .section-three {
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center; 
+        input {
+            width: 65%;
+            font-size: 12px; 
+        }
+
+        .btn-subscribe {
+            width: 35%; 
+        }
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center; 
+        td ul li {
+            width: 100%;
+            font-size: 12px;
+        }
+    }
+}

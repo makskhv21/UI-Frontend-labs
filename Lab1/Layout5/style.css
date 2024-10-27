@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #EAE8E3; 
-    color: #333; 
+    color: #333;
 }
 
 header {
@@ -57,17 +57,6 @@ header {
 .section-one:hover, .section-two:hover {
     background-color: #f0f8ff; 
     transform: scale(1.02);
-}
-
-.destination-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.destination-image:hover {
-    transform: scale(1.1); 
 }
 
 .section-one h2, .section-two h2 {
@@ -132,12 +121,8 @@ footer {
     color: white;
     padding: 20px;
     margin-top: 50px;
-}
-
-footer .footer-container {
-    display: flex;                      /* Flexbox */
-    justify-content: center;
-    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 table {                                 /* Table */
@@ -148,6 +133,8 @@ table {                                 /* Table */
 td {
     padding: 0 20px; 
     vertical-align: top; 
+    text-align: center; 
+    width: 25%;
 }
 
 ul {
@@ -171,13 +158,6 @@ a:hover {
     color: #FFBA00;
 }
 
-td {
-    text-align: center; 
-}
-
-.footer-container td {
-    width: 25%; 
-}
 
 /* Keyframe animations */
 @keyframes fadeIn {
@@ -249,6 +229,7 @@ td {
 
     article {
         line-height: 0;
+        order: 2;
     }
 
     .logo-content p{
@@ -271,10 +252,6 @@ td {
         width: 100%;
     }
 
-    .section-main article {
-        order: 2;
-    }
-
     input[type="text"] {
         width: 60%; 
         margin: 5px 29px; 
@@ -285,7 +262,7 @@ td {
         margin-right: 25px;
     }
 
-    .footer-container {
+    footer {
         font-size: 15px;
     }
 
@@ -331,13 +308,9 @@ td {
         align-items: center; 
     }
 
-    input[type="text"] {
-        font-size: 12px; 
-
-    }
-
     .section-three input {
         width: 65%;
+        font-size: 12px; 
     }
 
     .btn-subscribe {
@@ -346,11 +319,6 @@ td {
 
     footer {
         flex-direction: column;
-        align-items: center; 
-    }
-
-    .footer-container {
-        flex-direction: column; 
         align-items: center; 
     }
 

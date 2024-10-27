@@ -1,0 +1,302 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #EAE8E3;
+  color: #333;
+}
+body header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 100px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+body header .logo {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+body header .logo:hover {
+  transform: rotate(10deg);
+}
+body header .logo-content p {
+  width: 80%;
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #444;
+}
+body .section-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+body .section-main .section-one,
+body .section-main .section-two {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 40%;
+  gap: 15px;
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.5s ease, transform 0.3s ease;
+}
+body .section-main .section-one:hover,
+body .section-main .section-two:hover {
+  background-color: #f0f8ff;
+  transform: scale(1.02);
+}
+body .section-main .section-one h2,
+body .section-main .section-two h2 {
+  font-size: 2em;
+  color: #006B83;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+}
+body .section-main .section-one h2:hover,
+body .section-main .section-two h2:hover {
+  color: #004d5a;
+}
+body .section-main .section-one p,
+body .section-main .section-two p {
+  font-size: 1.1em;
+  line-height: 1.5;
+  color: #555;
+}
+body .section-main .section-one .logo,
+body .section-main .section-two .logo {
+  width: 250px;
+  height: 250px;
+  transition: transform 0.3s ease;
+}
+body .section-main .section-one .logo:hover,
+body .section-main .section-two .logo:hover {
+  transform: rotate(10deg);
+}
+body .section-three {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+body .section-three input[type=text] {
+  padding: 10px;
+  border: 1px solid #006B83;
+  border-radius: 5px;
+  margin-right: 10px;
+  width: 500px;
+  height: 40px;
+  font-size: 1em;
+}
+body .section-three button {
+  padding: 10px 20px;
+  background-color: #FFBA00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1em;
+  height: 60px;
+  width: 200px;
+}
+body .section-three button:hover {
+  background-color: scale(#FFBA00, -10%);
+  transform: scale(1.05);
+}
+body footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  background: #006B83;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+  max-width: 100%;
+  overflow: hidden;
+}
+body footer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+body footer table td {
+  padding: 0 20px;
+  vertical-align: top;
+  text-align: center;
+  width: 25%;
+}
+body footer table td ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+body footer table td ul li {
+  margin: 15px 0;
+}
+body footer table td ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+body footer table td ul li a:hover {
+  color: #FFBA00;
+}
+
+@media (max-width: 1200px) {
+  header {
+    margin-left: 150px !important;
+  }
+  header .logo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  main .section-main {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .section-main .section-one, main .section-main .section-two {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  main .section-main .section-one .logo, main .section-main .section-two .logo {
+    width: 200px !important;
+    height: 200px !important;
+  }
+  input[type=text] {
+    width: 100%;
+    max-width: 400px;
+  }
+  button {
+    width: 100%;
+    max-width: 200px;
+  }
+  footer .footer-container td {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column !important;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0 !important;
+  }
+  header .logo-content p {
+    margin: 50px;
+  }
+  main .section-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+  main .section-main .section-one, main .section-main .section-two {
+    width: 90%;
+    flex-direction: column;
+  }
+  main .section-main .section-one .logo, main .section-main .section-two .logo {
+    order: 1;
+    width: 100% !important;
+  }
+  main .section-main .section-one article, main .section-main .section-two article {
+    line-height: 0;
+    order: 2;
+  }
+  input[type=text] {
+    width: 60%;
+    margin: 5px 29px;
+  }
+  button {
+    width: 39%;
+    margin-right: 25px;
+  }
+  footer {
+    font-size: 15px;
+  }
+  footer ul li {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px 0;
+  }
+  header .logo-content p {
+    margin: 50px;
+  }
+  .section-main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-main .section-one, .section-main .section-two {
+    width: 90%;
+  }
+  .section-main img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .section-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-three input {
+    width: 65%;
+    font-size: 12px;
+  }
+  .section-three .btn-subscribe {
+    width: 35%;
+  }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer td ul li {
+    width: 100%;
+    font-size: 12px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
