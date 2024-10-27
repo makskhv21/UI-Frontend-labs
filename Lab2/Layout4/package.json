@@ -1,0 +1,17 @@
+{
+  "name": "my-styles-project",
+  "version": "1.0.0",
+  "description": "A project using LESS and Stylus",
+  "main": "index.js",
+  "scripts": {
+    "build-stylus": "stylus styles/style.styl styles/style.css",
+    "build": "npm run build-stylus",
+    "watch": "nodemon -e styl -x \"npm run build\""
+  },
+  "dependencies": {
+    "stylus": "^0.64.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
