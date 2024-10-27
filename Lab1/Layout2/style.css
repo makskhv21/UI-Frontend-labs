@@ -281,11 +281,6 @@ figcaption {
         font-size: 20px;
     }
 
-    .btn-cart img {
-        max-width: 60%;
-        max-height: 60%;
-    }
-
     .product-card {
         width: 100%;
         height: auto;
