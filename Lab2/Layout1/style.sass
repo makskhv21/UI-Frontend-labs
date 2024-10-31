@@ -1,4 +1,4 @@
-@import 'variables'
+@use 'variables' as *
 
 body
   font-family: 'Montserrat', sans-serif
@@ -131,6 +131,14 @@ body
         margin-left: 20px
         color: #FF4500
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5)
+  
+  @media (max-width: 1440px)
+    .header
+      display: flex
+      gap: 60%
+      
+      .search-container
+        width: 92%
 
   @media (max-width: 1200px)
     .header

@@ -157,6 +157,25 @@ ul {
 
 
 /* Media Queries */
+@media(max-width: 1440px) {
+    .header {
+        display: flex;
+        gap: 60%;
+    }
+
+    .search-container {
+        
+    }
+
+    #search-input {
+       
+    }
+
+    .search-container {
+        width: 92%; 
+    }
+}
+
 @media (max-width: 1200px) { 
     .one-two-section ul li {
         display: flex;
