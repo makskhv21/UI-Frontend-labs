@@ -9,7 +9,7 @@ body {
 
 /* Header */
 header {
-    display: flex;                 /* Flexbox */
+    display: flex;                     /* Flexbox */
     position: sticky;
     top: 0; 
     z-index: 1000; 
@@ -64,7 +64,7 @@ main {
 
 /* Section One */
 .section-one {
-    display: flex;                      /* Flexbox */
+    display: flex;                           /* Flexbox */
     justify-content: space-between;
     align-items: center;
     margin: 40px 20px;
@@ -145,7 +145,7 @@ main {
     padding: 60px;
     background-size: cover; 
     background-position: center; 
-    display: flex;                        /* Flexbox */
+    display: flex;                           /* Flexbox */
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
@@ -165,7 +165,7 @@ main {
 }
 
 .articles-container {
-    display: flex;                     /* Flexbox */
+    display: flex;                          /* Flexbox */
     align-items: stretch;
     justify-content: center;
     gap: 40px;
@@ -251,7 +251,7 @@ main {
 }
 
 .step {
-    display: flex;                   /* Flexbox */
+    display: flex;                        /* Flexbox */
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -312,7 +312,7 @@ main {
 /* Footer */
 footer {
     margin-top: 150px;
-    display: flex;                   /* Flexbox */
+    display: flex;                           /* Flexbox */
     background-color: #1A237E; 
     color: #fff; 
     padding: 20px; 
@@ -330,7 +330,7 @@ footer .logo {
 }
   
 footer .list-items {
-    display: flex;                       /* Flexbox */
+    display: flex;                         /* Flexbox */
     justify-content: space-around;
     margin-right: 50px;
     margin-left: 10px;
@@ -384,7 +384,7 @@ footer td {
     }
 
     .section-one {
-        display: flex;                      /* Flexbox */
+        display: flex;                          /* Flexbox */
         flex-direction: column;
     }
 
@@ -475,7 +475,7 @@ footer td {
     }
 
     .steps-container {
-        display: flex;                      /* Flexbox */
+        display: flex;                           /* Flexbox */
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -487,10 +487,6 @@ footer td {
 
     .step h1{
         font-size: 40px;
-    }
-
-    .step {
-        width: 100%;
     }
 
     .get-started-button {
@@ -527,9 +523,6 @@ footer td {
     .list-items {
         width: 90%;
     }
-    .list-items ul li {
-        font-size: 15px;
-    }
 }
 
 @media (max-width: 480px) {
@@ -555,7 +548,7 @@ footer td {
     }
 
     .step-by-step-guide {
-        display: flex;
+        display: flex;                       /* Flexbox */
         flex-direction: column;
         align-items: center;
     }

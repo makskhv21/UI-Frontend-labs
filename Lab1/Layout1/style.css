@@ -9,7 +9,7 @@ body {
 
 /* header */
 .header {
-    display: flex;              /* Flexbox */
+    display: flex;                     /* Flexbox */
     position: sticky;
     top: 0; 
     z-index: 1000; 
@@ -64,7 +64,7 @@ body {
 
 /* navigation-header */
 .one-two-section {
-    display: flex;             /* Flexbox */
+    display: flex;                       /* Flexbox */
     position: sticky;
     top: 80px; 
     z-index: 1000;
@@ -79,7 +79,7 @@ body {
 }
 
 .one-two-section ul {
-    display: flex;             /* Flexbox */ 
+    display: flex;                       /* Flexbox */ 
     gap: 100px;
     padding: 0; 
     margin: 0; 
@@ -98,7 +98,7 @@ body {
 
 /* main */
 .main-container {
-    display: flex;                 /* Flexbox */
+    display: flex;                        /* Flexbox */
     justify-content: space-between;
     gap: 20px;
     padding: 0 20px;
@@ -159,16 +159,8 @@ ul {
 /* Media Queries */
 @media(max-width: 1440px) {
     .header {
-        display: flex;
+        display: flex;              /* Flexbox */
         gap: 60%;
-    }
-
-    .search-container {
-        
-    }
-
-    #search-input {
-       
     }
 
     .search-container {
@@ -178,13 +170,15 @@ ul {
 
 @media (max-width: 1200px) { 
     .one-two-section ul li {
-        display: flex;
+        display: flex;                  /* Flexbox */
         flex-direction: row;
         align-items: center;
         justify-content: center;
         font-size: 17px;
     }
-    .side-nav ul li {
+
+    .side-nav ul li,
+    .side-trend ul li {
         font-size: 15px;
         padding-right: 10px;
     }
@@ -193,18 +187,13 @@ ul {
         font-size: 17px;
     }
 
-    .side-trend ul li {
-        font-size: 15px;
-        padding-right: 10px;
-    }
-
     .logoImg {
         width: 19%; 
         height: auto;
     }
 
     .header {
-        display: flex;
+        display: flex;           /* Flexbox */
         gap: 58%;
     }
 
@@ -214,10 +203,9 @@ ul {
 }
 
 @media (max-width: 768px) {
-
     .header {
-        display: flex;
-        gap: 20%;
+        display: flex;                 /* Flexbox */
+        gap: 20%; 
     }
 
     .one-two-section {

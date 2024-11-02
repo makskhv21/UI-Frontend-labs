@@ -7,7 +7,7 @@ body {
 }
 
 header {
-    display: flex;                  /* Flexbox */
+    display: flex;                        /* Flexbox */
     justify-content: center;
     align-items: center;
     gap: 20px; 
@@ -35,14 +35,14 @@ header {
 }
 
 .section-main {
-    display: flex;                   /* Flexbox */
+    display: flex;                           /* Flexbox */
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
 .section-one, .section-two {
-    display: flex;                  /* Flexbox */
+    display: flex;                           /* Flexbox */
     justify-content: center;
     align-items: flex-start;
     width: 40%;
@@ -78,7 +78,7 @@ header {
 }
 
 .section-three {
-    display: flex;                    /* Flexbox */
+    display: flex;                                /* Flexbox */
     justify-content: center;
     align-items: center;
     margin-top: 100px;
@@ -114,7 +114,7 @@ button:hover {
 }
 
 footer {
-    display: flex;                    /* Flexbox */
+    display: flex;                            /* Flexbox */
     justify-content: center;
     align-items: flex-start;
     background: #006B83;
@@ -157,7 +157,6 @@ a {
 a:hover {
     color: #FFBA00;
 }
-
 
 /* Keyframe animations */
 @keyframes fadeIn {
@@ -273,17 +272,6 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-    header {
-        flex-direction: column; 
-        align-items: center; 
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    .logo-content p{
-        margin: 50px
-    }
-
     .section-main {
         flex-direction: column; 
         justify-content: center;
@@ -302,7 +290,7 @@ a:hover {
     }
 
     .section-three {
-        display: flex;
+        display: flex;                            /* Flexbox */
         flex-direction: row; 
         justify-content: center;
         align-items: center; 
